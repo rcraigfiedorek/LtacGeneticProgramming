@@ -1,4 +1,4 @@
-package second_try;
+package genetic;
 
 import java.io.FileWriter;
 import java.io.IOException;

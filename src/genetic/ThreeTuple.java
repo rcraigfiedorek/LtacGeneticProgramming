@@ -1,4 +1,4 @@
-package second_try;
+package genetic;
 
 public class ThreeTuple<X, Y, Z> { 
 	public final X first; 

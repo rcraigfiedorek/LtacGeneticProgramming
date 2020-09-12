@@ -1,4 +1,4 @@
-package second_try;
+package genetic;
 
 public class Tuple<X, Y> { 
 	public final X first; 

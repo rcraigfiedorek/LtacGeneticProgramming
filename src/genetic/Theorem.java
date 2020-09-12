@@ -1,4 +1,4 @@
-package second_try;
+package genetic;
 
 import java.util.List;
 
