@@ -37,10 +37,9 @@ public class Main {
 		 * 
 		 */
 		
-		
+		String toProve = "forall n m : nat, n + m = m + n";
 		Theorem theorem = new Theorem(
-				"forall n :nat, n + 0 = n",
-				//"forall (X:Type)(a b c : X), a = b -> b = c -> a = c",
+				toProve,
 				Arrays.asList(), //lemmas
 				Arrays.asList( //tactics
 						"intro",
@@ -84,6 +83,8 @@ public class Main {
 		
 		long begin = System.currentTimeMillis();
 		
+		System.out.println("Proving the following theorem:");
+		System.out.println(toProve);
 		System.out.println(Main.evolve(coq, theorem, 100, 500, 0.2, 0.95, 0.15, 5).toCode());
 		
 		long end = System.currentTimeMillis();
